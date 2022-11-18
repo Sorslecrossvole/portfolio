@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon projet N°1</title>
+    <link rel="stylesheet" href="projets.css">
+</head>
+
+<body>
+    <div class="mobile" onclick="closeMenuMobile()"></div>
+    <header>
+        <nav>
+            <div class="profile">
+                <img src="/images/pdp.jpg" alt="photo de profil">
+                <h1>Chevallier Even</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </div>
+            <ul>
+                <p><a href="/index.html">Accueil</a></p>
+                <p><a href="/mes projets/accueil-projet.html">Mes projets</a></p>
+                <p><a href="projet1.html">Projet N°1</a></p>
+                <p><a href="projet2.html">Projet N°2</a></p>
+                <p><a href="projet3.html">Projet N°3</a></p>
+            </ul>
+        </nav>
+        <div class="burger" onclick="openMenuMobile()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </div>
+    </header>
+
+    <!-- ouvrir et fermer le menu burger -->
+    <script>
+        function openMenuMobile() {
+            console.log('ouvrir menu ');
+            document.querySelector('.nav').classList.add('open');
+            document.querySelector('.mobile').classList.add('open');
+        }
+
+        function closeMenuMobile() {
+            console.log('ouvrir menu ');
+            document.querySelector('.nav').classList.remove('open');
+            document.querySelector('.mobile').classList.remove('open');
+        }
+
+    </script>
+
+    <section class="page-content">
+        <header>
+            <h1>Mon projet n°1.</h1>
+            <br>
+            <p>Mon projet numéro 1 est celui de ma marque de vêtement. En 2021, avec mes 3 meilleurs amis, nous avons
+                décidé de nous lancer
+                dans la création d'une marque de vêtement, au début tout était vagues, flou, on ne savaient pas vraiment
+                comment s'y prendre, ni si ce projet allait vraiment
+                prendre forme. <br> Je suis donc allé chercher un peu d'aide au près de mes parents qui m'ont beaucoup
+                aidé pour ce projet pour tout ce qui est de la gestion d'entreprise.
+                <br> Début 2022, nous avons commencer à prendre le projet au sérieux. Le principal problème était
+                l'argent mais nous nous sommes pas découragés et nous avons cherché
+                du travail pendant les vacances afin de se procurer notre matériel sans dépendre de nos parents<br> Nous
+                nous sommes répartis les différents postes au seins de notre entreprise
+                (Un webDesigner, un Designer, un Responsable Marketing et directeur commercial), nous avons tout préparé
+                le temps d'être majeur et de véritablement se lancer dans
+                le monde du e-commerce. Nous avons créé nos propre design sur des logiciel de montage, acheté tout le
+                matériel nécessaire, puis j'ai créé notre site internet
+                <a href="http://twogoodforyou.fr" target="_blank">Twogoodforyou.fr </a>. <br>
+                Au jour d'aujourd'hui, nous allons lancer nos précommande sur le site via instagram afin de ne pas se
+                retrouver en surstock puis vendre notre
+                marque de vêtement en espérant se faire connaître par la suite afin de sortir de nouveaux design et
+                d'autres sortes de vêtements.
+            </p>
+        </header>
+
+
+        <section class="presentation-image">
+            <img src="/images/all.jpg" alt="presentation image">
+        </section>
+
+        <footer>
+            <div class="colonne">
+                <h3>Mes services</h3>
+                <p>Design WordPress</p>
+                <p>Codage HTML/CSS/PHP</p>
+                <p>Création site web</p>
+            </div>
+            <div class="colonne">
+                <h3>Mon entreprise</h3>
+                <p>4 gérants</p>
+                <p>entreprise de vêtements</p>
+                <p> <a href="http://twogoodforyou.fr" target="_blank">Twogoodforyou.fr </a></p>
+            </div>
+            <div class="colonne">
+                <h3>Contact</h3>
+                <p>evenchevallier@gmail.com</p>
+                <p>even.chevallier@epsi.fr</p>
+                <p>2gdtthe@twogoodforyou.fr</p>
+            </div>
+        </footer>
+
+</body>
+
+</html>
